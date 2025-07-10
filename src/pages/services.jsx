@@ -1,0 +1,101 @@
+import '../App.css'
+
+import ServiceCard from '../components/ServiceCard'
+
+const services = [
+    {
+    title: "Remodeling and Renovations",
+    description: "Bring new life to the old. Whether it's a dated kitchen, worn-out bathroom, or an entire home in need of refreshment, we specialize in turning tired spaces into functional, beautiful environments—all while honoring the character of your home.",
+    images:[
+            
+            ]
+    },
+
+    {
+    title: "New Construction",
+    description: "Building from the ground up—done right. From custom homes to small structures, we deliver quality craftsmanship that’s rooted in experience and attention to detail. We build with integrity, transparency, and pride in every nail.",
+    images:[]
+    },
+
+    {
+    title: "Additions",
+    description: "More space, more value. Whether you’re growing your family or just need more elbow room, we create seamless home additions that blend naturally with your existing structure—both in function and in form.",
+    images:[]
+    },
+
+    {
+    title: "Commercial Projects",
+    description: "Structures that support your success. We offer reliable, streamlined building solutions for commercial spaces—whether you're launching a new location or upgrading an existing one. Built tough, built smart, built to last.",
+    images:[]
+    },
+
+    {
+    title: "Flooring",
+    description: "Foundation for every step. From hardwood to tile and everything in between, we offer expert flooring installation that enhances the beauty, durability, and comfort of your space—residential or commercial.",
+    images:[
+            "../../public/Flooring1.jpeg",
+            "../../public/Flooring2.jpeg",
+            "../../public/Flooring3.jpeg",
+            "../../public/Flooring4.jpeg",
+            "../../public/Flooring5.jpeg"
+            ]
+    },
+
+    {
+    title: "Fencing",
+    description: "Strong boundaries, clean lines. Whether you need privacy, security, or a touch of western charm, our fencing services deliver durable, custom-built solutions that stand the test of time.",
+    images:[]
+    },
+
+    {
+    title: "ADA",
+    description: "Where accessibility meets craftsmanship. We build and remodel with inclusivity in mind—ensuring your space meets ADA standards without compromising style or function. From ramps and grab bars to full ADA-compliant layouts, we make every inch count.",
+    images:[]
+    },
+
+    {
+    title: "Epoxy",
+    description: "Tough as nails, clean as a whistle. Our epoxy flooring solutions offer long-lasting durability, chemical resistance, and a polished look for garages, warehouses, kitchens, and more. Ideal for high-traffic or industrial environments where performance matters.",
+    images:[
+            "../../public/Epoxy1.jpg",
+            "../../public/Epoxy2.jpg",
+            "../../public/Epoxy3.jpg",
+            ]
+    },
+
+    {
+    title: "Sterile OR Rooms",
+    description: "Built for precision. Designed for safety. We construct and retrofit sterile operating rooms and cleanroom environments to meet the highest standards of hygiene and regulation. Every detail—airflow, surfaces, lighting—is handled with technical care and medical-grade expertise.",
+    images:[
+            "../../public/Sterile1.jpg",
+            "../../public/Sterile2.jpg",
+            "../../public/Sterile3.jpg",
+            "../../public/Dental1.jpg",
+            "../../public/Dental2.jpg",
+            "../../public/Dental3.jpg",
+            "../../public/Dental4.jpg"
+            ]
+    },
+
+]
+
+export default function about(){
+    return(
+        <div className="bg-[#efcf8f] py-16 px-4 sm:px-6 lg:px-20 text-[#2F1D0F] ">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8"> Services Page </h1>
+            <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-6 
+            text-left items-center sm:text-lg md:text-xl mb-6 leading-relaxed max-w-6xl mx-auto flex h-full">
+                
+                {services.map((service, index) =>(
+                    <ServiceCard
+                        key={index}
+                        title={service.title}
+                        description={service.description}
+                        images={service.images}
+                    />
+                ))}
+
+            </div>
+        </div>
+    )
+}

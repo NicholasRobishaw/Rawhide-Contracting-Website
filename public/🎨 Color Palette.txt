@@ -1,0 +1,10 @@
+🎨 Color Palette:
+Element	Color Description				Hex Code
+Background			Warm parchment tan	#D4A766
+Inner circle (light tan)	Pale camel beige	#F2D7A2
+Rope Border (dark brown)	Deep brown/rope shadow	#4A2F1A
+"RC" & Text Color		Charcoal brown/black	#2F1D0F
+Banner background (ESTD/'25)	Rustic red/clay tone	#9E3D1D
+Banner Text			Cream white		#FBE6C6
+Skull (off-white bone)		Aged ivory		#E8DCC3
+Hammer accents			Dark brown		#3B2816
