@@ -65,7 +65,7 @@ export default function NavBar() {
               {/* Right: Quote Button */}
               <div className="hidden sm:flex">
                 <a
-                  href="#contact"
+                  href="/contact"
                   className="bg-[#9E3D1D] hover:bg-[#d75428] text-white font-bold py-2 px-4 rounded"
                 >
                   Get a Quote!

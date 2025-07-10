@@ -8,7 +8,7 @@ export default function Hero(){
             class=" bg-cover bg-center bg-fixed 
                     h-250 flex flex-col items-center justify-center text-center 
                     text-[white] " 
-            style={{ backgroundImage: "url('../../public/Hero bg.png')" }}>
+            style={{ backgroundImage: "url('../../Hero bg.png')" }}>
                 
                 <div className='bg-black/30 rounded-2xl py-5 px-5'>
                     <h1 class="text-4xl md:text-6xl font-bold mb-4">
@@ -20,13 +20,13 @@ export default function Hero(){
                     </p>
 
                     <div class="flex gap-4 justify-center">
-                        <button class="bg-yellow-700 hover:bg-yellow-800 text-white px-6 py-3 rounded-md">
+                        <a href="/contact" class="bg-yellow-700 hover:bg-yellow-800 text-white px-6 py-3 rounded-md">
                             Get a Free Estimate
-                        </button>
+                        </a>
 
-                        <button class="bg-white text-yellow-700 hover:text-yellow-800 px-6 py-3 rounded-md">
+                        <a href="/contact" class="bg-white text-yellow-700 hover:text-yellow-800 px-6 py-3 rounded-md">
                             Call Now
-                        </button>
+                        </a>
                     
                     </div>
                 </div>

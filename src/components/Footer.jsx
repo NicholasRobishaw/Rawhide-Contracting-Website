@@ -11,14 +11,15 @@ export default function FooterBar() {
           {/* Left Side: Brand or Info */}
           <div className="text-center md:text-left">
             <p className="font-semibold">&copy; {new Date().getFullYear()} Rawhide Construction</p>
+            <p className="text-sm"> ROC 359927</p>
             <p className="text-sm">Prescott, Arizona</p>
           </div>
   
           {/* Right Side: Links */}
           <div className="flex space-x-6">
-            <a href="#about" className="hover:text-white">About</a>
-            <a href="#services" className="hover:text-white">Services</a>
-            <a href="#contact" className="hover:text-white">Contact</a>
+            <a href="/about" className="hover:text-white">About</a>
+            <a href="/services" className="hover:text-white">Services</a>
+            <a href="/contact" className="hover:text-white">Contact</a>
           </div>
         </div>
       </footer>

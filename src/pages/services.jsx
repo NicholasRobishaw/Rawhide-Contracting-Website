@@ -33,11 +33,11 @@ const services = [
     title: "Flooring",
     description: "Foundation for every step. From hardwood to tile and everything in between, we offer expert flooring installation that enhances the beauty, durability, and comfort of your space—residential or commercial.",
     images:[
-            "../../public/Flooring1.jpeg",
-            "../../public/Flooring2.jpeg",
-            "../../public/Flooring3.jpeg",
-            "../../public/Flooring4.jpeg",
-            "../../public/Flooring5.jpeg"
+            "../../Flooring1.jpeg",
+            "../../Flooring2.jpeg",
+            "../../Flooring3.jpeg",
+            "../../Flooring4.jpeg",
+            "../../Flooring5.jpeg"
             ]
     },
 
@@ -57,9 +57,9 @@ const services = [
     title: "Epoxy",
     description: "Tough as nails, clean as a whistle. Our epoxy flooring solutions offer long-lasting durability, chemical resistance, and a polished look for garages, warehouses, kitchens, and more. Ideal for high-traffic or industrial environments where performance matters.",
     images:[
-            "../../public/Epoxy1.jpg",
-            "../../public/Epoxy2.jpg",
-            "../../public/Epoxy3.jpg",
+            "../../Epoxy1.jpg",
+            "../../Epoxy2.jpg",
+            "../../Epoxy3.jpg",
             ]
     },
 
@@ -67,13 +67,13 @@ const services = [
     title: "Sterile OR Rooms",
     description: "Built for precision. Designed for safety. We construct and retrofit sterile operating rooms and cleanroom environments to meet the highest standards of hygiene and regulation. Every detail—airflow, surfaces, lighting—is handled with technical care and medical-grade expertise.",
     images:[
-            "../../public/Sterile1.jpg",
-            "../../public/Sterile2.jpg",
-            "../../public/Sterile3.jpg",
-            "../../public/Dental1.jpg",
-            "../../public/Dental2.jpg",
-            "../../public/Dental3.jpg",
-            "../../public/Dental4.jpg"
+            "../../Sterile1.jpg",
+            "../../Sterile2.jpg",
+            "../../Sterile3.jpg",
+            "../../Dental1.jpg",
+            "../../Dental2.jpg",
+            "../../Dental3.jpg",
+            "../../Dental4.jpg"
             ]
     },
 
