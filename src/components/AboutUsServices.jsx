@@ -36,7 +36,7 @@ export default function AboutUsServices(){
                         0 1.125.504 1.125 1.125V21h4.125c.621 
                         0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
                     </svg>
-                    <p className="text-base md:text-lg font-semibold">Residential Construction</p>
+                    <p className="text-base md:text-lg font-semibold">Residential/Commercial Construction</p>
                     </div>
 
                     {/* Service 2 */}

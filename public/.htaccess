@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.html$ - [L]
+
+# If the requested file or directory exists, serve it
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Otherwise, serve index.html
+RewriteRule . /index.html [L]
