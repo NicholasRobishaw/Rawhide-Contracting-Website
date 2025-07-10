@@ -27,7 +27,7 @@ export default function about(){
             </div>
         
             
-            <form id="contact form" onSubmit={handleSubmit} className=" mt-10" >
+            {/* <form id="contact form" onSubmit={handleSubmit} className=" mt-10" >
                 <div class="space-y-12">
                     <div class="border-b border-gray-900/10 pb-12">
                         <h2 class="text-base/7 font-semibold text-gray-900">Quick Contact</h2>
@@ -99,7 +99,7 @@ export default function about(){
                     <button type="submit" class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-xs 
                     hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Sumbit</button>
                 </div>
-            </form>
+            </form> */}
 
 
         </div>

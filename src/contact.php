@@ -1,7 +1,7 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Replace this with your actual email address
-    $to = "steven.r@rawhidecontracting.com";
+    $to = "nick.r@rawhidecontracting.com";
     $subject = "New Contact Form Submission From Website";
 
     // Sanitize inputs

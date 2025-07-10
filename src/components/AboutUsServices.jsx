@@ -9,17 +9,17 @@ export default function AboutUsServices(){
                 
                 {/* About Us Column */}
                 <div>
-                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-left mb-6">
-                    About Us
-                </h1>
-                <p className="text-base sm:text-lg md:text-xl mb-6 leading-relaxed text-left">
-                    At Rawhide Contracting, we're a family-owned business proudly rooted in the local community. 
-                    We’re committed to delivering honest, high-quality work you can trust. From small upgrades to full builds, 
-                    we treat every project like it’s our own — with integrity, reliability, and a handshake you can count on.
-                </p>
-                <button className="bg-yellow-700 hover:bg-yellow-800 text-white px-6 py-3 rounded-md">
-                    Learn More About Us
-                </button>
+                    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-left mb-6">
+                        About Us
+                    </h1>
+                    <p className="text-base sm:text-lg md:text-xl mb-6 leading-relaxed text-left">
+                        At Rawhide Contracting, we're a family-owned business proudly rooted in the local community. 
+                        We’re committed to delivering honest, high-quality work you can trust. From small upgrades to full builds, 
+                        we treat every project like it’s our own — with integrity, reliability, and a handshake you can count on.
+                    </p>
+                    <a href="about" className="bg-yellow-700 hover:bg-yellow-800 text-white px-6 py-3 rounded-md">
+                        Learn More About Us
+                    </a>
                 </div>
 
                 {/* Services Column */}

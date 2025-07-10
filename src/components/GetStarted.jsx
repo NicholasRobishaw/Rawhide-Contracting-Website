@@ -16,9 +16,9 @@ export default function GetStarted(){
                 
                 {/* Contact Button */}
                 <div className="col-span-1 lg:col-span-1">
-                    <button className="bg-yellow-700 hover:bg-yellow-800 text-white px-6 py-4 rounded-md w-full h-full text-base sm:text-lg">
+                    <a href="contact" className="bg-yellow-700 hover:bg-yellow-800 text-white px-6 py-4 rounded-md w-full h-full text-base sm:text-lg">
                     Contact Us Now
-                    </button>
+                    </a>
                 </div>
 
                 {/* Arrow Icon */}
