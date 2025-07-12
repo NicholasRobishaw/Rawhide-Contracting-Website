@@ -17,13 +17,13 @@ const handleSubmit = async (e) => {
 
 export default function about(){
     return(
-        <div className="bg-[#f2d7a2] py-16 px-4 sm:px-6 lg:px-20 text-[#2F1D0F] max-w-6xl mx-auto">
+        <div className="flex flex-col bg-[#f2d7a2] py-16 px-8 sm:px-16 lg:px-20 text-[#2F1D0F] max-w-6xl mx-auto ">
 
             <div id="contact card" className='bg-black/10 rounded-2xl py-5 px-5 shadow-lg'>
-                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-left mb-6"> Contact Us At </h1>
-                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-left mb-6">Phone: (928)775-8991</h1>
-                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-left mb-6">Email: steven.r@rawhidecontracting.com</h1>
-
+                
+                <h1 className="text-xs sm:text-lg md:text-4xl lg:text-6xl font-bold text-left mb-6"> Contact Us At </h1>
+                <h1 className="text-xs sm:text-lg md:text-4xl lg:text-6xl font-bold text-left mb-6">Phone: (928)775-8991</h1>
+                <h1 className="text-xs sm:text-lg md:text-4xl lg:text-6xl font-bold text-left mb-6">Email: steven.r@rawhidecontracting.com</h1>
             </div>
         
             

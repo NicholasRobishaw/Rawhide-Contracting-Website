@@ -17,7 +17,7 @@ export default function AboutUsServices(){
                         We’re committed to delivering honest, high-quality work you can trust. From small upgrades to full builds, 
                         we treat every project like it’s our own — with integrity, reliability, and a handshake you can count on.
                     </p>
-                    <a href="about" className="bg-yellow-700 hover:bg-yellow-800 text-white px-6 py-3 rounded-md">
+                    <a href="about" className="bg-yellow-700 hover:bg-yellow-800 text-white px-6 py-3 rounded-md hover:scale-105 hover:shadow-2xl">
                         Learn More About Us
                     </a>
                 </div>

@@ -31,14 +31,20 @@ export default function NavBar() {
               
               {/* Left: Logo + Company Name */}
               <div className="flex items-center">
-                <img
-                  src="/Rawhide Contracting Logo Website.png"
-                  alt="Rawhide Contracting"
-                  className="h-10 w-auto mr-3"
-                />
-                <span className="text-xl sm:text-2xl md:text-3xl font-bold text-white">
-                  Rawhide Contracting
-                </span>
+                <a href="/" className='flex items-center'>
+                    <img
+                    src="/Rawhide Contracting Logo Website.png"
+                    alt="Rawhide Contracting"
+                    className="h-15 w-auto mr-3"
+                    />
+                </a>
+
+                <a href="/" className='flex items-center'>
+                  <span className="text-xl sm:text-2xl md:text-3xl font-bold text-white">
+                    Rawhide Contracting
+                  </span>
+
+                </a>
               </div>
 
               {/* Center: Desktop Nav */}
@@ -53,8 +59,9 @@ export default function NavBar() {
                     className={classNames(
                       item.current
                         ? 'bg-[#9E3D1D] text-white'
-                        : 'text-white hover:bg-[#d75428] hover:text-white',
+                        : 'text-white hover:bg-[#d75428] hover:text-white hover:scale-105 hover:shadow-2xl',
                       'rounded-md px-3 py-2 text-sm font-medium'
+                      
                     )}
                   >
                     {item.name}
@@ -63,10 +70,10 @@ export default function NavBar() {
               </div>
 
               {/* Right: Quote Button */}
-              <div className="hidden sm:flex">
+              <div className="hidden sm:flex ">
                 <a
                   href="/contact"
-                  className="bg-[#9E3D1D] hover:bg-[#d75428] text-white font-bold py-2 px-4 rounded"
+                  className="bg-[#9E3D1D] hover:bg-[#d75428] text-white font-bold py-2 px-4 rounded hover:scale-105 hover:shadow-2xl"
                 >
                   Get a Quote!
                 </a>
@@ -92,7 +99,7 @@ export default function NavBar() {
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
-                  as="button"
+                  as="a"
                   // onClick={() => handleNavClick(item)}
 
                   href={item.href}
@@ -109,7 +116,7 @@ export default function NavBar() {
               ))}
               {/* Mobile CTA button */}
               <a
-                href="#contact"
+                href="/contact"
                 className="block mt-2 bg-[#9E3D1D] hover:bg-[#d75428] text-white font-bold px-3 py-2 rounded-md text-base text-center"
               >
                 Get a Quote!

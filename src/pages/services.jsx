@@ -7,26 +7,39 @@ const services = [
     title: "Remodeling and Renovations",
     description: "Bring new life to the old. Whether it's a dated kitchen, worn-out bathroom, or an entire home in need of refreshment, we specialize in turning tired spaces into functional, beautiful environments—all while honoring the character of your home.",
     images:[
-            
+            "../../Remodel1.jpg",
+            "../../Remodel2.jpg"
             ]
     },
 
     {
     title: "New Construction",
     description: "Building from the ground up—done right. From custom homes to small structures, we deliver quality craftsmanship that’s rooted in experience and attention to detail. We build with integrity, transparency, and pride in every nail.",
-    images:[]
+    images:[
+        "../../NewBuildBlock1.jpg",
+        "../../NewBuildBlock2.jpg",
+        "../../Framing1.jpg",
+        "../../Framing2.jpg",
+        "../../Framing3.jpg"
+    ]
     },
 
     {
     title: "Additions",
     description: "More space, more value. Whether you’re growing your family or just need more elbow room, we create seamless home additions that blend naturally with your existing structure—both in function and in form.",
-    images:[]
+    images:[
+            "../../Addition1.jpg",
+            "../../Addition2.jpg"
+            ]
     },
 
     {
     title: "Commercial Projects",
     description: "Structures that support your success. We offer reliable, streamlined building solutions for commercial spaces—whether you're launching a new location or upgrading an existing one. Built tough, built smart, built to last.",
-    images:[]
+    images:[
+        "../../Commercial1.jpg",
+        "../../Commercial2.jpg"
+    ]
     },
 
     {
@@ -37,14 +50,19 @@ const services = [
             "../../Flooring2.jpeg",
             "../../Flooring3.jpeg",
             "../../Flooring4.jpeg",
-            "../../Flooring5.jpeg"
+            "../../Flooring5.jpeg",
+            "../../Flooring6.jpg"
             ]
     },
 
     {
     title: "Fencing",
     description: "Strong boundaries, clean lines. Whether you need privacy, security, or a touch of western charm, our fencing services deliver durable, custom-built solutions that stand the test of time.",
-    images:[]
+    images:[
+        "../../Fencing1.png",
+        "../../Fencing2.png",
+        "../../Fencing3.png"
+    ]
     },
 
     {

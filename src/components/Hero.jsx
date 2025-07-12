@@ -20,11 +20,11 @@ export default function Hero(){
                     </p>
 
                     <div class="flex gap-4 justify-center">
-                        <a href="/contact" class="bg-yellow-700 hover:bg-yellow-800 text-white px-6 py-3 rounded-md">
+                        <a href="/contact" class="bg-yellow-700 hover:bg-yellow-800 text-white px-6 py-3 rounded-md hover:scale-105 hover:shadow-2xl">
                             Get a Free Estimate
                         </a>
 
-                        <a href="/contact" class="bg-white text-yellow-700 hover:text-yellow-800 px-6 py-3 rounded-md">
+                        <a href="/contact" class="bg-white text-yellow-700 hover:text-yellow-800 px-6 py-3 rounded-md hover:scale-105 hover:shadow-2xl">
                             Call Now
                         </a>
                     
