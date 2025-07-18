@@ -7,8 +7,10 @@ const services = [
     title: "Remodeling and Renovations",
     description: "Bring new life to the old. Whether it's a dated kitchen, worn-out bathroom, or an entire home in need of refreshment, we specialize in turning tired spaces into functional, beautiful environments—all while honoring the character of your home.",
     images:[
-            "../../Remodel1.jpg",
-            "../../Remodel2.jpg"
+        "../../ERAU_Epoxy_ Before_After2.png",
+        "../../ERAU_Epoxy_ Before_After1.png",
+        "../../Remodel1.jpg",
+        "../../Remodel2.jpg",
             ]
     },
 
@@ -16,9 +18,9 @@ const services = [
     title: "New Construction",
     description: "Building from the ground up—done right. From custom homes to small structures, we deliver quality craftsmanship that’s rooted in experience and attention to detail. We build with integrity, transparency, and pride in every nail.",
     images:[
+        "../../Framing1.jpg",
         "../../NewBuildBlock1.jpg",
         "../../NewBuildBlock2.jpg",
-        "../../Framing1.jpg",
         "../../Framing2.jpg",
         "../../Framing3.jpg"
     ]
@@ -46,11 +48,11 @@ const services = [
     title: "Flooring",
     description: "Foundation for every step. From hardwood to tile and everything in between, we offer expert flooring installation that enhances the beauty, durability, and comfort of your space—residential or commercial.",
     images:[
+            "../../Flooring5.jpeg",
             "../../Flooring1.jpeg",
             "../../Flooring2.jpeg",
             "../../Flooring3.jpeg",
             "../../Flooring4.jpeg",
-            "../../Flooring5.jpeg",
             "../../Flooring6.jpg"
             ]
     },
@@ -65,19 +67,31 @@ const services = [
     ]
     },
 
+    // {
+    // title: "ADA",
+    // description: "Where accessibility meets craftsmanship. We build and remodel with inclusivity in mind—ensuring your space meets ADA standards without compromising style or function. From ramps and grab bars to full ADA-compliant layouts, we make every inch count.",
+    // images:[]
+    // },
+
     {
-    title: "ADA",
-    description: "Where accessibility meets craftsmanship. We build and remodel with inclusivity in mind—ensuring your space meets ADA standards without compromising style or function. From ramps and grab bars to full ADA-compliant layouts, we make every inch count.",
-    images:[]
+    title: "Polished Concrete",
+    description: "Upgrade your space with the durability and sleek appearance of polished concrete. Perfect for high-traffic areas, this low-maintenance flooring solution offers a modern, professional finish that resists wear, and staining. Whether you're revitalizing an entryway, showroom, or workspace, our polished concrete delivers long-lasting performance and a clean, high-end look tailored to your needs.",
+    images:[
+            "../../polished_concrete.png",
+            "../../polished_concrete2.png",
+            ]
     },
 
     {
     title: "Epoxy",
     description: "Tough as nails, clean as a whistle. Our epoxy flooring solutions offer long-lasting durability, chemical resistance, and a polished look for garages, warehouses, kitchens, and more. Ideal for high-traffic or industrial environments where performance matters.",
     images:[
+            "../../Epoxy5.jpg",
             "../../Epoxy1.jpg",
             "../../Epoxy2.jpg",
             "../../Epoxy3.jpg",
+            "../../Epoxy4.jpg",
+            "../../Epoxy6.jpg",
             ]
     },
 
