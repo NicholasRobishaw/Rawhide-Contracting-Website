@@ -18,16 +18,21 @@ const ServiceCard = ({ title, description, images }) => {
             {/* Image Carousel */}
             <div className="relative h-64 overflow-hidden">
                 {images.map((img, index) => (
-                <img
-                    key={index}
-                    src={img}
-                    alt={`Slide ${index}`}
-                    className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity rounded-2xl
-                    duration-500 ${
-                    index === current ? "opacity-100" : "opacity-0"
-                    }`}
-                />
-                ))}
+                    <picture
+                        key={index}
+                        className={`absolute top-0 left-0 w-full h-full transition-opacity rounded-2xl
+                        duration-500 ${index === current ? "opacity-100" : "opacity-0"}`}
+                    >
+                        <source srcSet={img.webp} media="(max-width: 600px)" type="image/webp" />
+                        <source srcSet={img.jpg} media="(max-width: 600px)" type="image/jpeg" />
+                        <img
+                        src={img.jpg}
+                        alt={`Slide ${index}`}
+                        className="w-full h-full object-cover"
+                        />
+                    </picture>
+                    ))}
+
                 {/* Carousel Controls */}
                 <button
                 onClick={prevImage}

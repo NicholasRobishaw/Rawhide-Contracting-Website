@@ -2,14 +2,18 @@ import '../App.css'
 
 export default function Hero(){
     return(
-        <>{/* Hero */}
+        <div> 
+        {/* Hero */}
             <div id='Headline' 
                 // mx-auto max-w-7xl px-2 sm:px-6 lg:px-8
-            class=" bg-cover bg-center bg-fixed 
+            className=" bg-cover bg-center bg-fixed 
                     h-250 flex flex-col items-center justify-center text-center 
                     text-[white] " 
-            style={{ backgroundImage: "url('../../Hero bg.png')" }}>
+            style={{ backgroundImage: "url('Hero-bg.jpg')" }}
+            >
                 
+
+
                 <div className='bg-black/30 rounded-2xl py-5 px-5'>
                     <h1 class="text-4xl md:text-6xl font-bold mb-4">
                     Reliable Contracting,<br />Rooted in the West.
@@ -30,6 +34,7 @@ export default function Hero(){
                     
                     </div>
                 </div>
-            </div> </>
+            </div> 
+        </div>
     )
 }

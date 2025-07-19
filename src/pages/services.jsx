@@ -7,10 +7,22 @@ const services = [
     title: "Remodeling and Renovations",
     description: "Bring new life to the old. Whether it's a dated kitchen, worn-out bathroom, or an entire home in need of refreshment, we specialize in turning tired spaces into functional, beautiful environments—all while honoring the character of your home.",
     images:[
-        "../../ERAU_Epoxy_ Before_After2.png",
-        "../../ERAU_Epoxy_ Before_After1.png",
-        "../../Remodel1.jpg",
-        "../../Remodel2.jpg",
+            {
+                jpg: "ERAU_Epoxy_ Before_After2.jpg",
+                webp:"ERAU_Epoxy_ Before_After2.webp",
+            },
+            {
+                jpg: "ERAU_Epoxy_ Before_After1.jpg",
+                webp:"ERAU_Epoxy_ Before_After1.webp",
+            },
+            {
+                jpg: "Remodel1.jpg",
+                webp:"Remodel1.webp",
+            },
+            {
+                jpg: "Remodel2.jpg",
+                webp:"Remodel2.webp",
+            },
             ]
     },
 
@@ -18,11 +30,26 @@ const services = [
     title: "New Construction",
     description: "Building from the ground up—done right. From custom homes to small structures, we deliver quality craftsmanship that’s rooted in experience and attention to detail. We build with integrity, transparency, and pride in every nail.",
     images:[
-        "../../Framing1.jpg",
-        "../../NewBuildBlock1.jpg",
-        "../../NewBuildBlock2.jpg",
-        "../../Framing2.jpg",
-        "../../Framing3.jpg"
+            {
+                jpg: "Framing1.jpg",
+                webp:"Framing1.webp",
+            },
+            {
+                jpg: "NewBuildBlock1.jpg",
+                webp:"NewBuildBlock1.webp",
+            },
+            {
+                jpg: "NewBuildBlock2.jpg",
+                webp:"NewBuildBlock2.webp",
+            },
+            {
+                jpg: "Framing2.jpg",
+                webp:"Framing2.webp",
+            },
+            {
+                jpg: "Framing3.jpg",
+                webp:"Framing3.webp",
+            },
     ]
     },
 
@@ -30,8 +57,15 @@ const services = [
     title: "Additions",
     description: "More space, more value. Whether you’re growing your family or just need more elbow room, we create seamless home additions that blend naturally with your existing structure—both in function and in form.",
     images:[
-            "../../Addition1.jpg",
-            "../../Addition2.jpg"
+            {
+                jpg: "Addition1.jpg",
+                webp:"Addition1.webp",
+
+            },
+            {
+                jpg: "Addition2.jpg",
+                webp:"Addition2.webp",
+            },
             ]
     },
 
@@ -39,8 +73,14 @@ const services = [
     title: "Commercial Projects",
     description: "Structures that support your success. We offer reliable, streamlined building solutions for commercial spaces—whether you're launching a new location or upgrading an existing one. Built tough, built smart, built to last.",
     images:[
-        "../../Commercial1.jpg",
-        "../../Commercial2.jpg"
+            {
+                jpg: "Commercial1.jpg",
+                webp:"Commercial1.webp",
+            },
+            {
+                jpg: "Commercial2.jpg",
+                webp:"Commercial2.webp",
+            },
     ]
     },
 
@@ -48,12 +88,30 @@ const services = [
     title: "Flooring",
     description: "Foundation for every step. From hardwood to tile and everything in between, we offer expert flooring installation that enhances the beauty, durability, and comfort of your space—residential or commercial.",
     images:[
-            "../../Flooring5.jpeg",
-            "../../Flooring1.jpeg",
-            "../../Flooring2.jpeg",
-            "../../Flooring3.jpeg",
-            "../../Flooring4.jpeg",
-            "../../Flooring6.jpg"
+            {
+                jpg: "Flooring5.jpg",
+                webp:"Flooring5.webp",
+            },
+            {
+                jpg: "Flooring1.jpg",
+                webp:"Flooring1.webp",
+            },
+            {
+                jpg: "Flooring2.jpg",
+                webp:"Flooring2.webp",
+            },
+            {
+                jpg: "Flooring3.jpg",
+                webp:"Flooring3.webp",
+            },
+            {
+                jpg: "Flooring4.jpg",
+                webp:"Flooring4.webp",
+            },
+            {
+                jpg: "Flooring6.jpg",
+                webp:"Flooring6.webp",
+            },
             ]
     },
 
@@ -61,9 +119,18 @@ const services = [
     title: "Fencing",
     description: "Strong boundaries, clean lines. Whether you need privacy, security, or a touch of western charm, our fencing services deliver durable, custom-built solutions that stand the test of time.",
     images:[
-        "../../Fencing1.png",
-        "../../Fencing2.png",
-        "../../Fencing3.png"
+            {
+                jpg: "Fencing1.jpg",
+                webp:"Fencing1.webp",
+            },
+            {
+                jpg: "Fencing2.jpg",
+                webp:"Fencing2.webp",
+            },
+            {
+                jpg: "Fencing3.jpg",
+                webp:"Fencing3.webp",
+            },
     ]
     },
 
@@ -77,8 +144,14 @@ const services = [
     title: "Polished Concrete",
     description: "Upgrade your space with the durability and sleek appearance of polished concrete. Perfect for high-traffic areas, this low-maintenance flooring solution offers a modern, professional finish that resists wear, and staining. Whether you're revitalizing an entryway, showroom, or workspace, our polished concrete delivers long-lasting performance and a clean, high-end look tailored to your needs.",
     images:[
-            "../../polished_concrete.png",
-            "../../polished_concrete2.png",
+            {
+                jpg: "polished_concrete.jpg",
+                webp:"polished_concrete.webp",
+            },
+            {
+                jpg: "polished_concrete2.jpg",
+                webp:"polished_concrete2.webp",
+            },
             ]
     },
 
@@ -86,12 +159,30 @@ const services = [
     title: "Epoxy",
     description: "Tough as nails, clean as a whistle. Our epoxy flooring solutions offer long-lasting durability, chemical resistance, and a polished look for garages, warehouses, kitchens, and more. Ideal for high-traffic or industrial environments where performance matters.",
     images:[
-            "../../Epoxy5.jpg",
-            "../../Epoxy1.jpg",
-            "../../Epoxy2.jpg",
-            "../../Epoxy3.jpg",
-            "../../Epoxy4.jpg",
-            "../../Epoxy6.jpg",
+            {
+                jpg: "Epoxy5.jpg",
+                webp:"Epoxy5.webp",
+            },
+            {
+                jpg: "Epoxy1.jpg",
+                webp:"Epoxy1.webp",
+            },
+            {
+                jpg: "Epoxy2.jpg",
+                webp:"Epoxy2.webp",
+            },
+            {
+                jpg: "Epoxy3.jpg",
+                webp:"Epoxy3.webp",
+            },
+            {
+                jpg: "Epoxy4.jpg",
+                webp:"Epoxy4.webp",
+            },
+            {
+                jpg: "Epoxy6.jpg",
+                webp:"Epoxy6.webp",
+            },
             ]
     },
 
@@ -99,13 +190,34 @@ const services = [
     title: "Sterile OR Rooms",
     description: "Built for precision. Designed for safety. We construct and retrofit sterile operating rooms and cleanroom environments to meet the highest standards of hygiene and regulation. Every detail—airflow, surfaces, lighting—is handled with technical care and medical-grade expertise.",
     images:[
-            "../../Sterile1.jpg",
-            "../../Sterile2.jpg",
-            "../../Sterile3.jpg",
-            "../../Dental1.jpg",
-            "../../Dental2.jpg",
-            "../../Dental3.jpg",
-            "../../Dental4.jpg"
+            {
+                jpg: "Sterile1.jpg",
+                webp:"Sterile1.webp",
+            },
+            {
+                jpg: "Sterile2.jpg",
+                webp:"Sterile2.webp",
+            },
+            {
+                jpg: "Sterile3.jpg",
+                webp:"Sterile3.webp",
+            },
+            {
+                jpg: "Dental1.jpg",
+                webp:"Dental1.webp",
+            },
+            {
+                jpg: "Dental2.jpg",
+                webp:"Dental2.webp",
+            },
+            {
+                jpg: "Dental3.jpg",
+                webp:"Dental3.webp",
+            },
+            {
+                jpg: "Dental4.jpg",
+                webp:"Dental4.webp",
+            },
             ]
     },
 

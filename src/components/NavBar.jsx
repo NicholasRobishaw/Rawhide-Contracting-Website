@@ -32,11 +32,15 @@ export default function NavBar() {
               {/* Left: Logo + Company Name */}
               <div className="flex items-center">
                 <a href="/" className='flex items-center'>
-                    <img
-                    src="/Rawhide Contracting Logo Website.png"
-                    alt="Rawhide Contracting"
-                    className="h-15 w-auto mr-3"
-                    />
+                    <picture>
+                      <source srcSet="Rawhide Contracting Logo Website.webp" type="image/webp" />
+                      <source srcSet="Rawhide Contracting Logo Website.png" type="image/png" />
+                      <img
+                        src="Rawhide Contracting Logo Website.png"
+                        alt="Rawhide Contracting"
+                        className="h-[60px] w-auto mr-3"
+                      />
+                    </picture>
                 </a>
 
                 <a href="/" className='flex items-center'>

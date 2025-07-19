@@ -5,7 +5,7 @@ export default function about(){
         <div >
             {/* bg-cover bg-center h-screen flex flex-col items-center justify-center text-center text-[white] */}
             <div className="relative bg-cover bg-center bg-no-repeat min-h-screen flex items-center justify-center text-white bg-fixed" 
-                style={{ backgroundImage: "url('../../AboutUsBG.png')" }}>
+                style={{ backgroundImage: "url('AboutUsBG.jpg')" }}>
 
                 <div id="About Us" className="py-16 px-4 sm:px-6 lg:px-20 text-white max-w-6xl mx-auto items-center sm:px-6 lg:px-20 fontsize=72 bg-black/30 rounded-2xl" >
                     <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-center mb-6">Rawhide Contracting </h1>

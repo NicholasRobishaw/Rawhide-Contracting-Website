@@ -1,19 +1,19 @@
 import '../App.css'
 
 
-const handleSubmit = async (e) => {
-  e.preventDefault();
+// const handleSubmit = async (e) => {
+//   e.preventDefault();
 
-  const formData = new FormData(e.target);
+//   const formData = new FormData(e.target);
 
-  const response = await fetch('../contact.php', {
-    method: 'POST',
-    body: formData
-  });
+//   const response = await fetch('../contact.php', {
+//     method: 'POST',
+//     body: formData
+//   });
 
-  const result = await response.text();
-  alert(result); // or show a confirmation message
-};
+//   const result = await response.text();
+//   alert(result); // or show a confirmation message
+// };
 
 export default function about(){
     return(
