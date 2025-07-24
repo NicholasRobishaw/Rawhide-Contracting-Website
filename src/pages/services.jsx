@@ -145,6 +145,18 @@ const services = [
     description: "Upgrade your space with the durability and sleek appearance of polished concrete. Perfect for high-traffic areas, this low-maintenance flooring solution offers a modern, professional finish that resists wear, and staining. Whether you're revitalizing an entryway, showroom, or workspace, our polished concrete delivers long-lasting performance and a clean, high-end look tailored to your needs.",
     images:[
             {
+                jpg: "polished_concrete3.jpg",
+                webp:"polished_concrete3.webp",
+            },
+            {
+                jpg: "polished_concrete4.jpg",
+                webp:"polished_concrete4.webp",
+            },
+            {
+                jpg: "polished_concrete5.jpg",
+                webp:"polished_concrete5.webp",
+            },
+            {
                 jpg: "polished_concrete.jpg",
                 webp:"polished_concrete.webp",
             },
