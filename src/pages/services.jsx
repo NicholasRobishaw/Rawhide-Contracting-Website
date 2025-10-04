@@ -1,12 +1,57 @@
+import { Button } from '@headlessui/react'
 import '../App.css'
 
 import ServiceCard from '../components/ServiceCard'
 
 const services = [
+    // TODO: finish container section
+    {
+    title:"Custom Containers Builds",
+    description:"Discover shipping container construction designed for any purpose—storage, tiny homes, modular offices, bullet resistant, pop-up entertainment centers, and disaster-resistant container units.",
+    images:[
+        {
+            jpg: "container1.jpg",
+            webp: "container1.webp"
+        },
+        {
+            jpg: "container2.jpg",
+            webp: "container2.webp"
+        }
+    ],
+    fullWidth: false,
+    link: "/container"
+    },
+    
+    {
+    title: "Decks",
+    description:"Rawhide Contracting provides custom deck construction, repairs, and refinishing. We combine precision craftsmanship with premium materials to create outdoor spaces that stand the test of time.",
+    images:[
+        {
+            jpg: "Deck1.JPG",
+            webp: "Deck1.webp"
+        },
+        {
+            jpg: "Deck2.JPG",
+            webp: "Deck2.webp"
+        },
+        {
+            jpg: "Deck3.JPG",
+            webp: "Deck3.webp"
+        }
+    ],
+    fullWidth: false,
+
+
+    },
+
     {
     title: "Remodeling and Renovations",
     description: "Bring new life to the old. Whether it's a dated kitchen, worn-out bathroom, or an entire home in need of refreshment, we specialize in turning tired spaces into functional, beautiful environments—all while honoring the character of your home.",
     images:[
+            {
+                jpg: "Fascia.JPG",
+                webp: "Fascia.webp"
+            },
             {
                 jpg: "ERAU_Epoxy_ Before_After2.jpg",
                 webp:"ERAU_Epoxy_ Before_After2.webp",
@@ -23,7 +68,9 @@ const services = [
                 jpg: "Remodel2.jpg",
                 webp:"Remodel2.webp",
             },
-            ]
+            ],
+
+    fullWidth: false,
     },
 
     {
@@ -50,7 +97,7 @@ const services = [
                 jpg: "Framing3.jpg",
                 webp:"Framing3.webp",
             },
-    ]
+        ]
     },
 
     {
@@ -239,16 +286,19 @@ export default function about(){
     return(
         <div className="bg-[#efcf8f] py-16 px-4 sm:px-6 lg:px-20 text-[#2F1D0F] ">
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8"> Services Page </h1>
-            <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-6 
-            text-left items-center sm:text-lg md:text-xl mb-6 leading-relaxed max-w-6xl mx-auto flex h-full">
+            <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-6
+            auto-rows-auto items-stretch text-left sm:text-lg md:text-xl mb-6 leading-relaxed max-w-6xl mx-auto h-full">
                 
-                {services.map((service, index) =>(
-                    <ServiceCard
-                        key={index}
+                {services.map((service, index) => (
+                    <div key={index} className={service.fullWidth ? "col-span-full" : ""}>
+                        <ServiceCard
                         title={service.title}
                         description={service.description}
                         images={service.images}
-                    />
+                        fullWidth={service.fullWidth}
+                        link={service.link}
+                        />
+                    </div>
                 ))}
 
             </div>

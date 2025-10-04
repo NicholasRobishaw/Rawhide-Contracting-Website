@@ -4,7 +4,7 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 export default function GetStarted(){
     return(
-        <div id="contact" className="bg-[#efcf8f] py-16 px-4 sm:px-6 lg:px-20 text-[#2F1D0F]">
+        <div id="contact" className="bg-[#f2d7a2] py-16 px-4 sm:px-6 lg:px-20 text-[#2F1D0F]">
             <div className="max-w-6xl mx-auto">
                 {/* Heading */}
                 <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-left mb-12">

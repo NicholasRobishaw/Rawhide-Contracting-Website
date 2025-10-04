@@ -1,68 +1,56 @@
-import '../App.css'
-import { useEffect, useRef, useState } from 'react';
+// src/components/ServiceCard.jsx
+import "../App.css";
+import Carousel from "./Carousel.jsx";
 
-const ServiceCard = ({ title, description, images }) => {
-  const [current, setCurrent] = useState(0);
-  const total = images.length;
+export default function ServiceCard({
+  title,
+  description,
+  images,            // can pass `images`...
+  imageArr = [],     // ...or `imageArr` (backward compat)
+  fullWidth = false,
+  link,
+}) {
+  // Prefer `images` prop; fall back to `imageArr`
+  const rawImages = images ?? imageArr ?? [];
 
-  const nextImage = () => setCurrent((current + 1) % total);
-  const prevImage = () => setCurrent((current -1 + total) % total);
+  // Normalize to an array of string URLs:
+  // - if item is a string, keep it
+  // - if item is an object, prefer .jpg then .webp
+  const normalizedImages = rawImages
+    .map((it) => (typeof it === "string" ? it : it?.jpg || it?.webp || null))
+    .filter(Boolean);
 
   return (
-    <div className="bg-[#f2d7a2] max-w-sm rounded-2xl 
-                    overflow-hidden shadow-lg 
-                    mx-auto flex flex-col h-full
-                    transform transition duration-300 hover:scale-105 hover:shadow-2xl">
-        <div className="px-6 py-4">
+    <div
+      className={`bg-[#f2d7a2] ${
+        fullWidth ? "w-full max-w-none col-span-full" : "max-w-sm mx-auto"
+      } rounded-2xl overflow-hidden shadow-lg flex flex-col h-full
+         transition duration-300 hover:scale-105 hover:shadow-2xl`}
+    >
+      <div className="px-6 py-4">
+        {/* Image Carousel */}
+        {normalizedImages.length > 0 && (
+          <Carousel images={normalizedImages} objectFit="cover" />
+        )}
 
-            {/* Image Carousel */}
-            <div className="relative h-64 overflow-hidden">
-                {images.map((img, index) => (
-                    <picture
-                        key={index}
-                        className={`absolute top-0 left-0 w-full h-full transition-opacity rounded-2xl
-                        duration-500 ${index === current ? "opacity-100" : "opacity-0"}`}
-                    >
-                        <source srcSet={img.webp} media="(max-width: 600px)" type="image/webp" />
-                        <source srcSet={img.jpg} media="(max-width: 600px)" type="image/jpeg" />
-                        <img
-                        src={img.jpg}
-                        alt={`Slide ${index}`}
-                        className="w-full h-full object-cover"
-                        />
-                    </picture>
-                    ))}
+        <div className="flex flex-col flex-grow px-6 py-4">
+          <h2 className="font-bold text-base mb-2">{title}</h2>
+          <p className="text-gray-700 text-base flex-1">{description}</p>
 
-                {/* Carousel Controls */}
-                <button
-                onClick={prevImage}
-                className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black/75 text-white px-2 py-1 cursor-pointer rounded-xl hover:scale-110 hover:shadow-2xl hover:bg-black/90"
-                >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
-                    </svg>
-                </button>
-                <button
-                onClick={nextImage}
-                className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black/75 text-white px-2 py-1 cursor-pointer rounded-xl hover:scale-110 hover:shadow-2xl hover:bg-black/90"
-                >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-                    </svg>
-                </button>
+          {link && (
+            <div className="mt-auto text-center pt-4">
+              <a
+                href={link}
+                className="inline-block rounded-xl px-4 py-2 bg-[#7a4a17] text-white
+                           hover:bg-[#683e14] focus:outline-none focus:ring-2
+                           focus:ring-offset-2 focus:ring-[#7a4a17]"
+              >
+                Learn More
+              </a>
             </div>
-
-            <div className="flex flex-col flex-grow px-6 py-4">
-                {/* Title */}
-                <h2 className="font-bold text-base mb-2">{title}</h2>
-                
-                {/* Description */}
-                <p className="text-gray-700 text-base">{description}</p>
-
-            </div>
+          )}
         </div>
+      </div>
     </div>
   );
-};
-
-export default ServiceCard;
+}

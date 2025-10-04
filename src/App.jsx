@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage.jsx'
 import AboutPage from './pages/about.jsx'
 import ServicesPage from './pages/services.jsx'
 import ContactPage from './pages/contact.jsx'
+import ContainerPage from './pages/container.jsx'
 import { Routes, Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom'
 import RootLayout from './layout/RootLayout.jsx'
 
@@ -17,6 +18,7 @@ function App() {
         <Route path='about' element={<AboutPage />} />
         <Route path='contact' element={<ContactPage />} />
         <Route path='services' element={<ServicesPage />} />
+        <Route path='container' element={<ContainerPage />} />
       </Route>
     )
   )

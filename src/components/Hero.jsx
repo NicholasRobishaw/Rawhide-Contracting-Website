@@ -6,14 +6,14 @@ export default function Hero(){
         {/* Hero */}
             <div id='Headline' 
                 // mx-auto max-w-7xl px-2 sm:px-6 lg:px-8
-            className=" bg-cover bg-center bg-fixed 
-                    h-250 flex flex-col items-center justify-center text-center 
+            className="
+                    bg-cover bg-no-repeat
+                    bg-center md:bg-fixed 
+                    sm:h-100 md:h-250
+                    flex flex-col items-center justify-center text-center 
                     text-[white] " 
             style={{ backgroundImage: "url('Hero-bg.jpg')" }}
-            >
-                
-
-
+            >              
                 <div className='bg-black/30 rounded-2xl py-5 px-5'>
                     <h1 class="text-4xl md:text-6xl font-bold mb-4">
                     Reliable Contracting,<br />Rooted in the West.
