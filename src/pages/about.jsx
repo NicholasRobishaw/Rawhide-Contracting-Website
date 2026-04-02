@@ -9,7 +9,7 @@ export default function about(){
 
                 <div
                 id="about-us"
-                className="py-16 px-4 sm:px-6 lg:px-20 text-white max-w-6xl mx-auto bg-black/30 rounded-2xl space-y-8"
+                className="py-16 px-4 sm:px-6 lg:px-20 text-white max-w-6xl mx-auto bg-black/60 rounded-2xl space-y-8"
                 >
                     <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-center">
                     Rawhide Contracting

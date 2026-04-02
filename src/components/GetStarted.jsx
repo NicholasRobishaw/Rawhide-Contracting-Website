@@ -4,8 +4,15 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 export default function GetStarted(){
     return(
-        <div id="contact" className="bg-[#f2d7a2] py-16 px-4 sm:px-6 lg:px-20 text-[#2F1D0F]">
-            <div className="max-w-6xl mx-auto">
+        <div id="contact" className="
+                    bg-cover bg-no-repeat
+                    bg-center md:bg-fixed 
+                    sm:h-100 md:h-150
+                    flex flex-col items-center justify-center text-center 
+                    text-[white] " 
+                    style={{ backgroundImage: "url('Deck4.jpg')" }}
+                    >              
+            <div className="max-w-6xl mx-auto bg-black/60 rounded-2xl py-5 px-5">
                 {/* Heading */}
                 <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-left mb-12">
                 Want to Learn More?

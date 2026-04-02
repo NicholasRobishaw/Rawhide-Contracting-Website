@@ -1,109 +1,225 @@
 import '../App.css'
+import { useState } from 'react'
 
+const MIN_BUDGET = 1000
+const MAX_BUDGET = 1000000
+const BUDGET_STEP = 1000
 
-// const handleSubmit = async (e) => {
-//   e.preventDefault();
+export default function Contact() {
+  const [minBudget, setMinBudget] = useState(25000)
+  const [maxBudget, setMaxBudget] = useState(100000)
 
-//   const formData = new FormData(e.target);
+  // Slider change handlers
+  const handleMinChange = (e) => {
+    const value = Number(e.target.value)
+    setMinBudget(value)
+    if (value > maxBudget) setMaxBudget(value)
+  }
 
-//   const response = await fetch('../contact.php', {
-//     method: 'POST',
-//     body: formData
-//   });
+  const handleMaxChange = (e) => {
+    const value = Number(e.target.value)
+    setMaxBudget(value)
+    if (value < minBudget) setMinBudget(value)
+  }
 
-//   const result = await response.text();
-//   alert(result); // or show a confirmation message
-// };
+  // Arrow button handlers
+  const incrementMin = () =>
+    setMinBudget((prev) => Math.min(prev + BUDGET_STEP, maxBudget))
 
-export default function about(){
-    return(
-        <div className="flex flex-col bg-[#f2d7a2] py-16 px-8 sm:px-16 lg:px-20 text-[#2F1D0F] max-w-6xl mx-auto ">
+  const decrementMin = () =>
+    setMinBudget((prev) => Math.max(prev - BUDGET_STEP, MIN_BUDGET))
 
-            <div id="contact card" className='bg-black/10 rounded-2xl py-5 px-5 shadow-lg'>
-                
-                <h1 className="text-xs sm:text-lg md:text-4xl lg:text-6xl font-bold text-left mb-6"> Contact Us At </h1>
-                <h1 className="text-xs sm:text-lg md:text-4xl lg:text-6xl font-bold text-left mb-6">Phone: (928)775-8991</h1>
-                <h1 className="text-xs sm:text-lg md:text-4xl lg:text-6xl font-bold text-left mb-6">Email: steven.r@rawhidecontracting.com</h1>
-            </div>
-        
-            
-            {/* <form id="contact form" onSubmit={handleSubmit} className=" mt-10" >
-                <div class="space-y-12">
-                    <div class="border-b border-gray-900/10 pb-12">
-                        <h2 class="text-base/7 font-semibold text-gray-900">Quick Contact</h2>
-                        <p class="mt-1 text-sm/6 text-gray-600">Fill In the information below and we will get back to you soon!</p>
+  const incrementMax = () =>
+    setMaxBudget((prev) => Math.min(prev + BUDGET_STEP, MAX_BUDGET))
 
-                        <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-                            <div class="sm:col-span-3">
-                                <label for="first-name" class="block text-sm/6 font-medium text-gray-900">First name</label>
-                                <div class="mt-2">
-                                    <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6" />
-                                </div>
-                            </div>
+  const decrementMax = () =>
+    setMaxBudget((prev) => Math.max(prev - BUDGET_STEP, minBudget))
 
-                            <div class="sm:col-span-3">
-                                <label for="last-name" class="block text-sm/6 font-medium text-gray-900">Last name</label>
-                                <div class="mt-2">
-                                    <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6" />
-                                </div>
-                            </div>
+  return (
+    <div className="bg-[#F4F4F5] py-16 px-6 sm:px-16 lg:px-20 text-[#18181B]">
+      <div className="max-w-6xl mx-auto">
 
-                            <div class="sm:col-span-3">
-                                <label for="email" class="block text-sm/6 font-medium text-gray-900">Email address</label>
-                                <div class="mt-2">
-                                    <input id="email" name="email" type="email" autocomplete="email" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6" />
-                                </div>
-                            </div>
+        <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold mb-6">
+          Let’s Work Together
+        </h1>
 
-                            <div class="sm:col-span-3">
-                                <label for="phone" class="block text-sm/6 font-medium text-gray-900">Phone</label>
-                                <div class="mt-2">
-                                    <input id="phone" name="phone" type="phone" autocomplete="phone" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6" />
-                                </div>
-                            </div>
-
-                            <div class="col-span-full">
-                                <label for="about" class="block text-sm/6 font-medium text-gray-900">About</label>
-                                <div class="mt-2">
-                                    <textarea name="about" id="about" rows="3" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"></textarea>
-                                </div>
-                                <p class="mt-3 text-sm/6 text-gray-600">Let us know what youre looking for.</p>
-                            </div>
-
-                             <div class="sm:col-span-full">
-                                <label for="service" class="block text-sm/6 font-medium text-gray-900">Service</label>
-                                <div class="mt-2 grid grid-cols-1">
-                                    <select id="service" name="service" class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
-                                        <option>Remodeling/Renovation</option>
-                                        <option>New Construction</option>
-                                        <option>Addition</option>
-                                        <option>Flooring</option>
-                                        <option>Fencing</option>
-                                        <option>ADA</option>
-                                        <option>Epoxy</option>
-                                        <option>Sterile</option>
-                                        <option>Other</option>
-                                    </select>
-                                    <svg class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
-                                    <path fill-rule="evenodd" d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
-                                    </svg>
-                                </div>
-                            </div>
-                                    
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mt-6 flex items-center justify-end gap-x-6">
-                    <button type="button" class="text-sm/6 font-semibold text-gray-900">Cancel</button>
-                    <button type="submit" class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-xs 
-                    hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Sumbit</button>
-                </div>
-            </form> */}
-
-
+        {/* CONTACT INFO */}
+        <div className="mb-12 rounded-lg border border-[#2F1D0F]/20 bg-white/40 p-6">
+          <h2 className="text-xl font-semibold mb-2">Prefer to talk?</h2>
+          <p className="mb-4">Give us a call and we’ll walk through your project.</p>
+          <div className="space-y-1 text-lg mb-8">
+            <p>📞 <span className="font-semibold">(928) 899-4826</span></p>
+            <p>📍 Serving Prescott, Prescott Valley & surrounding areas</p>
+          </div>
+          <a
+            href="tel:9288994826"
+            className="mt-6 bg-yellow-700 text-white hover:text-yellow-800 px-8 py-4 rounded-md hover:scale-105 hover:shadow-2xl transition font-semibold"
+            >
+            Call Now
+          </a>
         </div>
 
+        <div className=" gap-12 items-start">
 
-    )
+          {/* FORM */}
+          <form
+            action="https://formsubmit.co/8a8916336127c0255dd17f3f56af8cef"
+            method="POST"
+            className="space-y-6"
+          >
+            {/* NAME */}
+            <div>
+              <label className="block text-sm font-semibold mb-1">Name</label>
+              <input
+                type="text"
+                name="Name"
+                required
+                className="block w-full rounded-md bg-black/30 px-3.5 py-2 text-white"
+              />
+            </div>
+
+            {/* EMAIL */}
+            <div>
+              <label className="block text-sm font-semibold mb-1">Email</label>
+              <input
+                type="email"
+                name="Email"
+                required
+                className="block w-full rounded-md bg-black/30 px-3.5 py-2 text-white"
+              />
+            </div>
+
+            {/* PHONE */}
+            <div>
+              <label className="block text-sm font-semibold mb-1">Phone</label>
+              <input
+                type="text"
+                name="Phone"
+                className="block w-full rounded-md bg-black/30 px-3.5 py-2 text-white"
+              />
+            </div>
+
+            {/* MESSAGE */}
+            <div>
+              <label className="block text-sm font-semibold mb-1">Message</label>
+              <textarea
+                name="Message"
+                rows="4"
+                className="block w-full rounded-md bg-black/30 px-3.5 py-2 text-white"
+              />
+            </div>
+
+            {/* BUDGET RANGE */}
+            <fieldset className="border rounded-lg p-4">
+              <legend className="px-2 text-sm font-medium">
+                Estimated Budget Range
+              </legend>
+
+              <div className="space-y-6 mt-4">
+
+                {/* MIN BUDGET */}
+                <div>
+                  <label className="block text-sm font-semibold mb-1">
+                    Minimum Budget
+                  </label>
+
+                  <div className="flex items-center gap-3">
+                    <button
+                      type="button"
+                      onClick={decrementMin}
+                      className="px-3 py-1 rounded-md bg-[#E5E7EB] hover:bg-white"
+                    >
+                      ◀
+                    </button>
+
+                    <input
+                      type="range"
+                      min={MIN_BUDGET}
+                      max={MAX_BUDGET}
+                      step={BUDGET_STEP}
+                      value={minBudget}
+                      onChange={handleMinChange}
+                      className="w-full"
+                    />
+
+                    <button
+                      type="button"
+                      onClick={incrementMin}
+                      className="px-3 py-1 rounded-md bg-[#E5E7EB] hover:bg-white"
+                    >
+                      ▶
+                    </button>
+                  </div>
+
+                  <p className="text-sm mt-1">
+                    ${minBudget.toLocaleString()}
+                  </p>
+                </div>
+
+                {/* MAX BUDGET */}
+                <div>
+                  <label className="block text-sm font-semibold mb-1">
+                    Maximum Budget
+                  </label>
+
+                  <div className="flex items-center gap-3">
+                    <button
+                      type="button"
+                      onClick={decrementMax}
+                      className="px-3 py-1 rounded-md bg-[#E5E7EB] hover:bg-white"
+                    >
+                      ◀
+                    </button>
+
+                    <input
+                      type="range"
+                      min={MIN_BUDGET}
+                      max={MAX_BUDGET}
+                      step={BUDGET_STEP}
+                      value={maxBudget}
+                      onChange={handleMaxChange}
+                      className="w-full"
+                    />
+
+                    <button
+                      type="button"
+                      onClick={incrementMax}
+                      className="px-3 py-1 rounded-md bg-[#E5E7EB] hover:bg-white"
+                    >
+                      ▶
+                    </button>
+                  </div>
+
+                  <p className="text-sm mt-1">
+                    {maxBudget === MAX_BUDGET
+                      ? `$${MAX_BUDGET.toLocaleString()}+`
+                      : `$${maxBudget.toLocaleString()}`}
+                  </p>
+                </div>
+
+              </div>
+            </fieldset>
+
+            {/* HIDDEN EMAIL FIELD */}
+            <input
+              type="hidden"
+              name="Budget Range"
+              value={
+                maxBudget === MAX_BUDGET
+                  ? `$${minBudget.toLocaleString()} – $${MAX_BUDGET.toLocaleString()}+`
+                  : `$${minBudget.toLocaleString()} – $${maxBudget.toLocaleString()}`
+              }
+            />
+
+            <button
+              type="submit"
+              className="w-full rounded-md bg-[#3F3F46]  px-4 py-3 text-white font-semibold hover:bg-[#2F1D0F]"
+            >
+              Let’s Talk
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  )
 }

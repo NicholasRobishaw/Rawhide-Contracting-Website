@@ -90,7 +90,7 @@ export default function Carousel({
           <picture
             key={i}
             className={`absolute inset-0 transition-opacity duration-500 ${
-              i === current ? "opacity-100" : "opacity-0"
+              i === current ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
             }`}
           >
             <img
@@ -99,7 +99,7 @@ export default function Carousel({
               className={`w-full h-full ${fitClass} bg-black cursor-zoom-in`}
               loading={i === current ? "eager" : "lazy"}
               decoding="async"
-              onClick={() => handleImageClick(i)}
+              onClick={() => handleImageClick(current)}
             />
           </picture>
         ))}
@@ -184,7 +184,7 @@ export default function Carousel({
                     onClick={() => setLightboxIndex((i) => (i - 1 + total) % total)}
                     aria-label="Previous image"
                     className="absolute left-2 top-1/2 -translate-y-1/2
-                               bg-white/20 hover:bg-white/30 text-white rounded-full w-10 h-10
+                               bg-black/75 hover:bg-white/30 text-white rounded-full w-10 h-10
                                flex items-center justify-center"
                   >
                     ‹
@@ -193,7 +193,7 @@ export default function Carousel({
                     onClick={() => setLightboxIndex((i) => (i + 1) % total)}
                     aria-label="Next image"
                     className="absolute right-2 top-1/2 -translate-y-1/2
-                               bg-white/20 hover:bg-white/30 text-white rounded-full w-10 h-10
+                               bg-black/75 hover:bg-white/30 text-white rounded-full w-10 h-10
                                flex items-center justify-center"
                   >
                     ›

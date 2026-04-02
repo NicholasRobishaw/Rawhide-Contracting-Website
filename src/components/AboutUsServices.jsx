@@ -5,11 +5,18 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 export default function AboutUsServices(){
     return(
         <div>
-            <div id="about-us" className="bg-[#f2d7a2] py-16 px-4 sm:px-6 lg:px-20 text-[#2F1D0F]">
+            <div id="about-us"  className="
+                    bg-cover bg-no-repeat
+                    bg-center md:bg-fixed 
+                    sm:h-100 md:h-150
+                    flex flex-col items-center justify-center text-center 
+                    text-[white] " 
+                    style={{ backgroundImage: "url('ConcreteERAU2.jpg')" }}
+                    >              
                 <div className="max-w-6xl mx-auto">
                     
                     {/* About Us Column */}
-                    <div>
+                    <div className='bg-black/60 rounded-2xl py-5 px-5'>
                         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-left mb-6">
                             About Us
                         </h1>
@@ -26,7 +33,7 @@ export default function AboutUsServices(){
             </div>
 
             {/* Services Column */}
-            <div id="services" className='bg-[#efcf8f] py-16 px-4 sm:px-6 lg:px-20 text-[#2F1D0F] '>
+            <div id="services" className='bg-[#E7E5E4] py-16 px-4 sm:px-6 lg:px-20 text-[#111827] '>
                 <div className='max-w-6xl mx-auto'>
                     <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-left mb-6">
                         Services

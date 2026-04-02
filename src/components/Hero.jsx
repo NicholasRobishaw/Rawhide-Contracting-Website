@@ -12,9 +12,9 @@ export default function Hero(){
                     sm:h-100 md:h-250
                     flex flex-col items-center justify-center text-center 
                     text-[white] " 
-            style={{ backgroundImage: "url('Hero-bg.jpg')" }}
+            style={{ backgroundImage: "url('BGwithBanner.jpg')" }}
             >              
-                <div className='bg-black/30 rounded-2xl py-5 px-5'>
+                <div className='bg-black/60 rounded-2xl py-5 px-5'>
                     <h1 class="text-4xl md:text-6xl font-bold mb-4">
                     Reliable Contracting,<br />Rooted in the West.
                     </h1>

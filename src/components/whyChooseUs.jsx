@@ -4,7 +4,7 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 export default function WhyChooseUs(){
     return(
-    <div id="why-choose-us" className="bg-[#efcf8f] py-16 px-4 sm:px-6 lg:px-20 text-[#2F1D0F]">
+    <div id="why-choose-us" className="bg-[#E7E5E4] py-16 px-4 sm:px-6 lg:px-20 text-[#111827]">
         <div className="max-w-6xl mx-auto">
             {/* Heading */}
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-left mb-8">

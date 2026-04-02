@@ -4,28 +4,90 @@ import '../App.css'
 import ServiceCard from '../components/ServiceCard'
 
 const services = [
+    // Example Code for converting to webp: cwebp ShakerWhite.JPG -o ShakerWhite.webp
+
     // TODO: finish container section
+    // {
+    // title:"Custom Containers Builds",
+    // description:"Discover shipping container construction designed for any purpose—storage, tiny homes, modular offices, bullet resistant, pop-up entertainment centers, and disaster-resistant container units.",
+    // images:[
+    //     {
+    //         jpg: "container1.jpg",
+    //         webp: "container1.webp"
+    //     },
+    //     {
+    //         jpg: "container2.jpg",
+    //         webp: "container2.webp"
+    //     }
+    // ],
+    // fullWidth: false,
+    // link: "/container"
+    // },
     {
-    title:"Custom Containers Builds",
-    description:"Discover shipping container construction designed for any purpose—storage, tiny homes, modular offices, bullet resistant, pop-up entertainment centers, and disaster-resistant container units.",
+    title: "Cabinetry Built to Last",
+    description: "Rawhide Contracting provides custom cabinet design and installation for kitchens, bathrooms, and built-in storage. We supply cabinets that are functional, durable, and tailored to your space, using quality materials. From kitchen cabinets and bathroom vanities to custom built-ins, we handle the full process from planning to installation. Our goal is to create custom cabinetry that improves storage, organization, and the overall look of your home.",
     images:[
         {
-            jpg: "container1.jpg",
-            webp: "container1.webp"
+            jpg: "NanoGreen.jpg",
+            webp: "NanoeGreen.webp"
+        },
+
+        {
+            jpg: "NanoWhite.jpg",
+            webp: "NanoWhite.webp"
         },
         {
-            jpg: "container2.jpg",
-            webp: "container2.webp"
-        }
+            jpg: "ShakerGrey.jpg",
+            webp: "ShakerGrey.webp"
+        },
+        {
+            jpg: "ShakerLuxe.jpg",
+            webp: "ShakerLuxe.webp"
+        },
+        {
+            jpg: "ShakerModernSlate.jpg",
+            webp: "ShakerModernSlate.webp"
+        },
+        {
+            jpg: "ShakerOnyxBlack.jpg",
+            webp: "ShakerOnyxBlack.webp"
+        },
+        {
+            jpg: "ShakerSignatureBlue.jpg",
+            webp: "ShakerSignatureBlue.webp"
+        },
+        {
+            jpg: "ShakerWhite.jpg",
+            webp: "ShakerWhite.webp"
+        },
+        
+        {
+            jpg: "EuroNaturalWalnut.jpg",
+            webp: "EuroNaturalWalnut.webp"
+        },
+        {
+            jpg: "ShakerFinishes.jpg",
+            webp: "ShakerFinishes.webp"
+        },
+        {
+            jpg: "CabinetFeatures.jpg",
+            webp: "CabinetFeatures.webp"
+        },
     ],
-    fullWidth: false,
-    link: "/container"
+    fullWidth: true,
+    link: "/cabinet-documents"
     },
-    
+
+
     {
     title: "Decks",
     description:"Rawhide Contracting provides custom deck construction, repairs, and refinishing. We combine precision craftsmanship with premium materials to create outdoor spaces that stand the test of time.",
     images:[
+        {
+            jpg: "Deck4.jpg",
+            webp: "Deck4.webp"
+        },
+
         {
             jpg: "Deck1.JPG",
             webp: "Deck1.webp"
@@ -120,6 +182,16 @@ const services = [
     title: "Commercial Projects",
     description: "Structures that support your success. We offer reliable, streamlined building solutions for commercial spaces—whether you're launching a new location or upgrading an existing one. Built tough, built smart, built to last.",
     images:[
+            {
+                jpg: "ConcreteERAU1.jpg",
+                webp:"ConcreteERAU1.webp",
+            },
+
+            {
+                jpg: "ConcreteERAU2.jpg",
+                webp:"ConcreteERAU2.webp",
+            },
+        
             {
                 jpg: "Commercial1.jpg",
                 webp:"Commercial1.webp",
@@ -277,14 +349,15 @@ const services = [
                 jpg: "Dental4.jpg",
                 webp:"Dental4.webp",
             },
-            ]
+        ],
+    fullWidth: true,
     },
 
 ]
 
 export default function about(){
     return(
-        <div className="bg-[#efcf8f] py-16 px-4 sm:px-6 lg:px-20 text-[#2F1D0F] ">
+        <div className="bg-[#F4F4F5] py-16 px-4 sm:px-6 lg:px-20 text-[#18181B] ">
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8"> Services Page </h1>
             <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-6
             auto-rows-auto items-stretch text-left sm:text-lg md:text-xl mb-6 leading-relaxed max-w-6xl mx-auto h-full">
