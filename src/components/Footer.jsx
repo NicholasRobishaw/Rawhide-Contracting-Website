@@ -6,20 +6,19 @@ export default function FooterBar() {
     return(
         
         <footer className="bg-[#2F1D0F] text-white py-6 shadow-inner">
-        
-          
-
             <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-center md:text-left">
 
               {/* Column 1 - Branding */}
-              <div>
+              <div className="text-center md:text-left flex flex-col items-center md:items-start">
                 <img
-                src="/Rawhide Contracting Logo Website.png"
-                alt="RC Logo"
-                className="h-32 opacity-80 hover:opacity-100 transition "
+                  src="/Rawhide Contracting Logo Website.png"
+                  alt="RC Logo"
+                  className="h-32 opacity-80 hover:opacity-100 transition mb-4"
                 />
+
                 <h3 className="text-2xl font-bold mb-4">Rawhide Contracting</h3>
-                <p className="text-gray-300">
+
+                <p className="text-gray-300 max-w-xs">
                   Built for the West. Made to last.
                 </p>
               </div>

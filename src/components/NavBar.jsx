@@ -51,7 +51,7 @@ export default function NavBar() {
     <Disclosure
       as="nav"
       className={classNames(
-        "fixed top-0 left-0 w-full z-50 transition-all duration-300 md:relative",
+        "fixed top-0 left-0 w-full z-50 transition-all duration-300 md:relative font-brand tracking-wide",
         scrolled
           ? "bg-transparent md:bg-[#2F1D0F]"
           : "bg-[#2F1D0F]/90 backdrop-blur-sm md:bg-[#2F1D0F]"
@@ -77,7 +77,7 @@ export default function NavBar() {
 
                   <span
                     className={classNames(
-                      "text-lg sm:text-xl md:text-2xl font-bold text-white whitespace-nowrap overflow-hidden transition-all duration-300 ease-in-out",
+                      "font-western text-lg sm:text-xl md:text-2xl font-bold text-white whitespace-nowrap overflow-hidden transition-all duration-300 ease-in-out ",
                       showName
                         ? "opacity-100 translate-x-0 max-w-[320px]"
                         : "opacity-0 -translate-x-3 max-w-0 md:opacity-100 md:translate-x-0 md:max-w-[220px]"
@@ -96,8 +96,9 @@ export default function NavBar() {
                     to={item.href}
                     className={classNames(
                       item.current
-                        ? 'bg-[#9E3D1D] text-white'
-                        : 'text-white hover:bg-[#d75428] hover:text-white hover:scale-105 hover:shadow-2xl',
+                        ? 'font-western bg-[#9E3D1D] text-white'
+                        
+                        : 'font-western text-white hover:bg-[#d75428] hover:text-white hover:scale-105 hover:shadow-2xl',
                       'rounded-md px-3 py-2 text-sm font-medium transition'
                     )}
                   >
@@ -141,7 +142,7 @@ export default function NavBar() {
                   className={classNames(
                     item.current
                       ? 'bg-[#9E3D1D] text-white'
-                      : 'text-white hover:bg-[#d75428] hover:text-white',
+                      : 'font-western text-white hover:bg-[#d75428] hover:text-white',
                     'block rounded-md px-3 py-2 text-base font-medium'
                   )}
                 >

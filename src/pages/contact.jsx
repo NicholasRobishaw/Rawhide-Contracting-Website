@@ -53,7 +53,7 @@ export default function Contact() {
           </div>
           <a
             href="tel:9288994826"
-            className="mt-6 bg-yellow-700 text-white hover:text-yellow-800 px-8 py-4 rounded-md hover:scale-105 hover:shadow-2xl transition font-semibold"
+            className="mt-6 bg-yellow-700 text-white hover:text-yellow-800 px-8 py-4 rounded-md hover:scale-105 hover:shadow-2xl transition font-semibold "
             >
             Call Now
           </a>
